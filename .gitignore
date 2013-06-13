@@ -1,4 +1,10 @@
 *.class
+bin/
+
+# Eclipse stuff
+.classpath
+.project
+.settings/
 
 # Package Files #
 *.jar
