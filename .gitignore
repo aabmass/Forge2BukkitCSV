@@ -6,6 +6,9 @@ bin/
 .project
 .settings/
 
+# maven stuff
+target/
+
 # Package Files #
 *.jar
 *.war
