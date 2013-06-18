@@ -9,8 +9,9 @@ import net.minecraft.item.Item;
 
 /**
  * A big thanks to ForgeEssentials for this code! It comes from their
- * FriendlyItemsList.java, but I added some obfuscations so I wouldn't have to
- * obfuscate the whole mod jar!
+ * FriendlyItemsList.java, but I added some mcpc+-api-srgnames
+ * obfuscations. These should last and not cause ClassNotFoundException's
+ * when minecraft is upgraded!
  **/
 public class ForgeItemList {
     private HashMap<String, Item> itemMap = new HashMap<String, Item>();
@@ -31,8 +32,7 @@ public class ForgeItemList {
         for (Item item : Item.field_77698_e) {
             if (item != null) {
                 try {
-                    itemMap.put(item.func_77658_a().toLowerCase()
-                            .replaceAll("tile.", "").replaceAll("item.", ""), item);
+                    itemMap.put(item.func_77658_a().toLowerCase().replaceAll("tile.", "").replaceAll("item.", ""), item);
                 }
                 catch (Exception e) {
 
@@ -44,8 +44,7 @@ public class ForgeItemList {
             if (block != null && block.field_71990_ca != 0) {
                 try {
 
-                    blockMap.put(block.func_71917_a().toLowerCase()
-                            .replaceAll("item.", "").replaceAll("tile.", ""), block);
+                    blockMap.put(block.func_71917_a().toLowerCase().replaceAll("item.", "").replaceAll("tile.", ""), block);
                 }
                 catch (Exception e) {
 

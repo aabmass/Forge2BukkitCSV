@@ -61,20 +61,14 @@ public class ItemCSVList {
             if (allowAllCharacters) {
                 for (int i = 0; i < blockList.size(); i++) {
                     if (!written.contains(blockList.get(i))) {
-                        writer.write(blockList.get(i)
-                                + ","
-                                + list.getBlockForName(blockList.get(i)).field_71990_ca
-                                + ",0\n");
+                        writer.write(blockList.get(i) + "," + list.getBlockForName(blockList.get(i)).field_71990_ca + ",0\n");
                         written.add(blockList.get(i));
                     }
                 }
 
                 for (int i = 0; i < itemList.size(); i++) {
                     if (!written.contains(itemList.get(i))) {
-                        writer.write(itemList.get(i)
-                                + ","
-                                + list.getItemForName(itemList.get(i)).field_77779_bT
-                                + ",0\n");
+                        writer.write(itemList.get(i) + "," + list.getItemForName(itemList.get(i)).field_77779_bT + ",0\n");
                         written.add(itemList.get(i));
                     }
                 }
@@ -87,10 +81,7 @@ public class ItemCSVList {
                             .replaceAll("[^a-zA-Z0-9,]", "");
 
                     if (!written.contains(allowedBlockName)) {
-                        writer.write(allowedBlockName
-                                + ","
-                                + list.getBlockForName(blockList.get(i)).field_71990_ca
-                                + ",0\n");
+                        writer.write(allowedBlockName + "," + list.getBlockForName(blockList.get(i)).field_71990_ca + ",0\n");
                         written.add(allowedBlockName);
                     }
                 }
@@ -101,10 +92,7 @@ public class ItemCSVList {
                             .replaceAll("[^a-zA-Z0-9,]", "");
 
                     if (!written.contains(allowedItemName)) {
-                        writer.write(allowedItemName
-                                + ","
-                                + list.getItemForName(itemList.get(i)).field_77779_bT
-                                + ",0\n");
+                        writer.write(allowedItemName + "," + list.getItemForName(itemList.get(i)).field_77779_bT + ",0\n");
                         written.add(allowedItemName);
                     }
                 }
