@@ -11,7 +11,7 @@ This plugin will only work on MCPC-Plus servers. It doesn't use too much from bu
 I developed this plugin so that bukkit commands and plugins, namely Essentials signs and /give, will work with items/blocks provided by Minecraft Forge mods!
 
 ##Installation
-Just download the [jar](http://pixelmon.us/mod-dl/Forge2BukkitCSV-0.0.2jar) and put it in your MCPC-Plus server's plugins folder and restart the server.
+Just download the [jar](http://pixelmon.us/mod-dl/Forge2BukkitCSV-0.0.2.jar) and put it in your MCPC-Plus server's plugins folder and restart the server.
 ##Usage
 This plugin currently doesn't use any commands. Some may be expected in the future for pluging the generated items.csv into bukkit through Essentials or a sign shop plugin, etc.
 
